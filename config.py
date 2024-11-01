@@ -18,11 +18,11 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","Ownergit")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "KiyomiMusicBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "IshuMusicXBot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME" , "Nexiko")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "LofiMuisxcBot")
+ASSUSERNAME = getenv("ASSUSERNAME" , "IshuMusicXBot")
 # ---------------------------------------------------------
 
 
@@ -55,7 +55,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamLofi/KiyomiRobo",
+    "https://github.com/TeamLofi/IshuRobo",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
@@ -143,7 +143,7 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/l39ea6.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/c7g9za.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://files.catbox.moe/5k6nfa.mp4"
