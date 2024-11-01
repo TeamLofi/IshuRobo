@@ -14,7 +14,7 @@
 GO TO [RELOAD.PY](https://github.com/TeamLofi/IshuRobo/blob/Master/IshuRobo/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
 <p align="center">
-  <img src="https://files.catbox.moe/l39ea6.jpg">
+  <img src="https://files.catbox.moe/c7g9za.jpg">
 </p>
 
 <p align="center">
