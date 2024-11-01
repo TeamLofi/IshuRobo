@@ -7,7 +7,7 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-✪ ωεℓ¢σмє ƒσя 𝚍𝚊𝚡𝚡 яєρσѕ ✪
+✪ ωεℓ¢σмє ƒσя 𝐋𝐨𝐟𝐢 яєρσѕ ✪
  
  ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
  
@@ -71,7 +71,7 @@ InlineKeyboardButton("𝐓𝐞𝐚𝐦𝐋𝐨𝐟𝐢", url=f"https://t.me/Team
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://files.catbox.moe/o7ugdm.jpg",
+        photo="https://files.catbox.moe/c7g9za.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
@@ -84,7 +84,7 @@ InlineKeyboardButton("𝐓𝐞𝐚𝐦𝐋𝐨𝐟𝐢", url=f"https://t.me/Team
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/TeamLofi/KiyomiRobo/contributors")
+        response = await client.get("https://api.github.com/repos/TeamLofi/IshuRobo/contributors")
     
     if response.status_code == 200:
         users = response.json()
@@ -94,7 +94,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/TeamLofi/KiyomiRobo) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/TeamLofi)
+        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/TeamLofi/IshuRobo) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/TeamLofi)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
