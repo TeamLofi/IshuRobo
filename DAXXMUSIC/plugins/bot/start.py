@@ -41,7 +41,7 @@ NEXI_VID = [
 
 
 
-@app.on_message(filters.command(["mmstart"]) & filters.private & ~BANNED_USERS)
+@app.on_message(filters.command(["mstart"]) & filters.private & ~BANNED_USERS)
 @Languagemstart
 async def mstart_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
