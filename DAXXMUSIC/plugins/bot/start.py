@@ -22,7 +22,7 @@ from DAXXMUSIC.utils.database import (
 )
 from DAXXMUSIC.utils.decorators.language import Languagemstart
 from DAXXMUSIC.utils.formatters import get_readable_time
-from DAXXMUSIC.utils.inline import help_pannel, private_panel, mstart_panel
+from DAXXMUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
@@ -116,7 +116,7 @@ async def mstart_pm(client, message: Message, _):
 @app.on_message(filters.command(["mstart"]) & filters.group & ~BANNED_USERS)
 @Languagemstart
 async def mstart_gp(client, message: Message, _):
-    out = mstart_panel(_)
+    out = start_panel(_)
     uptime = int(time.time() - _boot_)
     await message.reply_video(
         random.choice(NEXI_VID),
@@ -152,7 +152,7 @@ async def welcome(client, message: Message):
                     )
                     return await app.leave_chat(message.chat.id)
 
-                out = mstart_panel(_)
+                out = start_panel(_)
                 await message.reply_video(
                     random.choice(NEXI_VID),
                     caption=_["mstart_3"].format(
